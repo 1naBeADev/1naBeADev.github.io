@@ -1,0 +1,663 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #000;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+}
+
+.navroglogo>img{
+    width: 150px;
+    height: 80px;
+}
+
+.navC{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+}
+
+.navcontents{
+    text-decoration: none;
+    padding: 0 12px;
+    color: #fff;
+    font-size: 20px;
+    transition: .5s linear;
+}
+
+.navcontents:hover{
+    color: #f02e2e;
+}
+
+.navicons{
+    display: flex;
+    width: 140px;
+    overflow: hidden;
+}
+
+.sAndA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 14px;
+    font-size: 25px;
+    color: #fff;
+    transition: .5s linear;
+}
+
+.sAndA:hover{
+    color: #f02e2e;
+}
+
+.ppage1{
+    width: 100%;
+    height: 50em;
+    position: relative;
+    overflow: hidden;
+}
+
+.ppage1cter{
+    width: 100%;
+    height: 50em;
+    background-color: #000;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+}
+
+.ppage1>h1{
+    color: white;
+}
+
+.whatsnewelts{
+    width: 100%;
+    height: 50em;
+    position: absolute;
+    top: 0;
+}
+
+.frstslide{
+    background-image: url(wutsnew1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.scndslide{
+    background-image: url(wutsnew2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    left: 89em;
+}
+
+.thrdslide{
+    background-image: url(wutsnew3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    left: 177.9em;
+}
+
+.frthslide{
+    background-image: url(wutsnew4.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    left: 267em;
+}
+
+#prev,#next{
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+#prev{
+    top: 50%;
+    left: 20px;
+}
+
+#next{
+    top: 50%;
+    right: 20px;
+}
+
+.ppage2{
+    width: 100%;
+    height: 50em;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.moreinf{
+    visibility: hidden;
+    width: 100%;
+    transition: 1s linear;
+    opacity: 0;
+    line-height: 30px;
+}
+
+.moreinf>p{
+    color: #bababa;
+}
+
+.scndpbconts{
+    margin: 0 8em;
+}
+
+.frthpbconts{
+    margin: 0 2em;
+}
+
+.pcbwrapper{
+    display: flex;
+    width: 100%;
+    height: 40em;
+    overflow: hidden;
+}
+
+.pbconts{
+    width: 100%;
+    height: 40em;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+}
+
+.pbconts:hover .moreinf{
+    visibility: visible;
+    opacity: 1;
+}
+
+.lapconts:hover .moreinf{
+    visibility: visible;
+    opacity: 1;
+}
+
+.fonconts:hover .moreinf{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.pbconts>img{
+    width: 35em;
+    height: 28em;
+    cursor: pointer;
+}
+
+.pbconts>p{
+    font-size: 20px;
+}
+
+.pcbslider{
+    position: absolute;
+    left: 0em;
+}
+
+.pcbuilds{
+    position: relative;
+    width: 100%;
+    height: 33em;
+}
+
+.pcbuilds>p{
+    font-size: 40px;
+    margin-top: 86px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+#pcbprev, #pcbnext{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#pcbprev{
+    top: 50%;
+    left: 20px;
+}
+
+#pcbnext{
+    top: 50%;
+    right: 20px;
+}
+
+.ppage3{
+    width: 100%;
+    height: 58em;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.laptopwrap{
+    display: flex;
+    width: 100%;
+    height: 40em;
+}
+
+.lapconts{
+    width: 100%;
+    height: 40em;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+
+}
+
+.lapconts>img{
+    width: 30em;
+    height: 24em;
+    cursor: pointer;
+}
+
+.laptops>p{
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.laptops{
+    position: relative;
+    height: 33em;
+}
+
+.laptopslider{
+    position: absolute;
+    left: 0;
+}
+
+.lapconts>p{
+    font-size: 20px;
+}
+
+#lapTprev,#lapTnext{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    cursor: pointer;
+    padding: 30px;
+}
+
+#lapTprev{
+    top: 50%;
+    left: 0;
+}
+
+#lapTnext{
+    top: 50%;
+    right: 0;
+}
+
+.ppage4{
+    width: 100%;
+    height: 50em;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.hovbtn{
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    transition: .8s linear;
+}
+
+
+.hovbtn>button{
+    color:#c7c7c7;
+    font-weight: 700;
+    margin-top: 5em;
+    cursor: pointer;
+    padding: 8px 30px;
+    font-size: 18px;
+    background-color: #e30a0a;
+    border-radius: 5px;
+}
+
+.pcCconts:hover .hovbtn{
+    visibility: visible;
+    opacity: 1;
+}
+
+.pcCwrap{
+    display: flex;
+    width: 100%;
+    height: 33em;
+}
+
+.pcCconts{
+    width: 100%;
+    height: 33em;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+}
+
+.pcEconts:hover .hovbtn{
+    visibility: visible;
+    opacity: 1;
+}
+
+.pcCconts>img{
+    width: 30em;
+    height: 24em;
+    cursor: pointer;
+}
+
+.pcCconts>p{
+    font-size: 20px;
+}
+
+.pcComponents{
+    position: relative;
+    height: 33em;
+}
+
+.pcComponents>p{
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.pcCslider{
+    position: absolute;
+    left: 0;
+}
+
+.lastitm{
+    margin-left: 16em;
+}
+
+.thrdlstitm{
+    margin-left: 12em;
+}
+
+.frthlstitm{
+    margin-left: 7em;
+}
+
+.scndlstitm{
+    margin-left: 10em;
+}
+
+#pccnext,#pccprev{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#pccnext{
+    top: 50%;
+    right: 20px;
+}
+
+#pccprev{
+    top: 50%;
+    left: 20px;
+}
+
+ .ppage5{
+    width: 100%;
+    height: 64em;
+    background-color: #000;
+    overflow: hidden;
+ }
+
+ .fonwrap{
+    display: flex;
+    width: 100%;
+    height: 33em;
+ }
+
+ .fonconts{
+    width: 100%;
+    height: 33em;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+ }
+
+ .fonconts>img{
+    width: 30em;
+    height: 28em;
+    cursor: pointer;
+}
+
+.fonconts>p{
+    font-size: 20px;
+}
+
+.fon{
+    position: relative;
+    height: 33em;
+}
+
+.fon>p{
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.fonslider{
+    position: absolute;
+    left: 0;
+}
+
+.ppage6{
+    width: 100%;
+    height: 50em;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.pcEwrap{
+    display: flex;
+    width: 100%;
+    height: 33em;
+}
+.pcEconts{
+    width: 100%;
+    height: 33em;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+}
+
+.pcEconts>img{
+    width: 46em;
+    height: 25em;
+    cursor: pointer;
+    padding: 0 80px;
+}
+.pcEconts>p{
+    font-size: 20px;
+}
+
+.pcE{
+    position: relative;
+    height: 33em;
+}
+
+.pcE>p{
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.pcEslider{
+    position: absolute;
+    left: 0;
+}
+
+#pcEnext,#pcEprev{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#pcEnext{
+    top: 50%;
+    right: 20px;
+}
+
+#pcEprev{
+    top: 50%;
+    left: 20px;
+}
+
+.ppage7{
+    width: 100%;
+    height: 60em;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.pcCswrap{
+    display: flex;
+    width: 100%;
+    height: 33em;
+}
+
+.pcCsconts{
+    width: 100%;
+    height: 33em;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+}
+
+.pcCsconts>img{
+    width: 46em;
+    height: 25em;
+    cursor: pointer;
+    padding: 0 80px;
+}
+
+.pcCsconts:hover .hovbtn{
+    visibility: visible;
+    opacity: 1;
+}
+
+.pcCs>p{
+    font-size: 20px;
+}
+
+.pcCases{
+    position: relative;
+    height: 33em;
+}
+
+.pcCases>p{
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.pcCsslider{
+    position: absolute;
+    left: 0;
+}
+
+#pcCsnext,#pcCsprev{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#pcCsnext{
+    top: 50%;
+    right: 20px;
+}
+
+#pcCsprev{
+    top: 50%;
+    left: 20px;
+}
+
+.footer{
+    width: 100%;
+    height: 20em;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.fterelements>a,.fterelements>a,.scndfter>a{
+    text-decoration: none;
+    color: #737373;
+    transition: linear .3s;
+    font-size: 20px;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+.socials{
+    padding: 20px
+}
+
+.fterelements>a:hover,.fterelements>:hover,.scndfter>a:hover{
+    color: red;
+}
+
+.containerfter{
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 3em;
+    border-bottom: 1px solid #737373;
+}
+
+.scndftercontainer{
+    margin: 20px auto;
+    display: flex;
+    justify-content: end;
+    width: 90%;
+    color: #737373;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Oswald', sans-serif;  
+}
+
+.scndfter{
+    padding: 0 25px;
+}
+
